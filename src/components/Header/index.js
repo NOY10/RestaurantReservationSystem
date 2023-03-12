@@ -1,0 +1,7 @@
+export {default as Navbar} from './Navbar.jsx'
+export {default as Homepage} from '../Homepage/Homepage.jsx'
+export {default as Menu} from '../Menu/Menu.jsx'
+export {default as Reservation} from '../Reservation/Reservation.jsx'
+export {default as Login} from '../LogInReg/logIn'
+export {default as Register} from '../LogInReg/Register'
+export {default as Aboutus} from '../Aboutus/Aboutus'
