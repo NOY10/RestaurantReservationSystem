@@ -1,5 +1,5 @@
 import './App.css'
-import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus } from './components/Header/index'
+import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus } from './components/index'
 import { Navigate,Route, Routes, useLocation } from 'react-router-dom';
 
 function App() {
