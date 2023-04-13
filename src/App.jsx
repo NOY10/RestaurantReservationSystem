@@ -1,4 +1,4 @@
-import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus } from './components/index'
+import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus, ContactUs } from './components/index'
 import { Navigate,Route, Routes, useLocation } from 'react-router-dom';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/Login" element={<Login />}/>
           <Route exact path="/Register" element={<Register />}/>
           <Route exact path="/Aboutus" element={<Aboutus />}/>
+          <Route exact path="/ContactUs" element={<ContactUs />}/>
           <Route path="*" element={<Navigate to="/Homepage" replace />} />
         </Routes>
     </div>

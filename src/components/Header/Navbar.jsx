@@ -9,17 +9,43 @@ const Navbar = () => {
         <p>TSM HOTEL</p>
       </div>
       <div className='headerRight'>
-        <NavLink to={'/Homepage'} >
-          Homepage
+        <div className='anima'>
+          <NavLink to={'/Homepage'} >
+            Home
+          </NavLink>
+          <span className='focus-broder'></span>
+        </div>
+        <div className='anima'>
+          <NavLink to={'/Menu'} >
+            Menu
+          </NavLink>
+          <span className='focus-broder'></span>
+        </div>
+        <div className='anima'>
+          <NavLink to={'/Reservation'} >
+            Reservation
+          </NavLink>
+          <span className='focus-broder'></span>
+        </div>
+        <div className='anima'>
+          <NavLink to={'/Aboutus'} >
+            About Us
+          </NavLink>
+          <span className='focus-broder'></span>
+        </div>
+        <div className='anima'>
+          <NavLink to={'/ContactUs'} >
+            Contact Us
+          </NavLink>
+          <span className='focus-broder'></span>
+        </div>
+      </div>
+      <div className='register'>
+        <NavLink to={'/Register'}>
+          Sign Up
         </NavLink>
-        <NavLink to={'/Menu'} >
-          Menu
-        </NavLink>
-        <NavLink to={'/Reservation'} >
-          Reservation
-        </NavLink>
-        <NavLink to={'/Aboutus'} >
-          About Us
+        <NavLink to={'/logIn'}>
+          Log In
         </NavLink>
       </div>
     </header>
