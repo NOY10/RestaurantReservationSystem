@@ -5,4 +5,5 @@ body {
   font-family: 'Chewy', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  contain:paint;
 }

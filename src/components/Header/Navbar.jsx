@@ -1,12 +1,13 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import logo from '../img/logo.png';
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <header>
       <div className='headerLeft'>
-        <p>TSM HOTEL</p>
+      <img src={logo} class="logo"/>
       </div>
       <div className='headerRight'>
         <div className='anima'>
@@ -41,9 +42,6 @@ const Navbar = () => {
         </div>
       </div>
       <div className='register'>
-        <NavLink to={'/Register'}>
-          Sign Up
-        </NavLink>
         <NavLink to={'/logIn'}>
           Log In
         </NavLink>
