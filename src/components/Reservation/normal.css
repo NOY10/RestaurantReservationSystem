@@ -1,0 +1,94 @@
+.normal{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    color:wheat;
+}
+
+.left{
+    /* border:4px solid blue; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:70%;
+    /* border: 4px solid red; */
+}
+.tit p{
+    margin: 0;
+    padding: 0;
+}
+.right{
+    /* border:4px solid red; */
+    width: 40%;
+}
+
+.Fouter{
+    background-color:rgb(52,44,36);
+    padding: 10px;
+    margin-top: -5px;
+}
+.inp{
+    margin: 8px;
+    display: flex;
+}
+#bod{
+    border:2px solid orange;
+    width: 410px
+}
+#bod > p{
+    margin-left: 7px;
+}
+
+.inputI{
+    font-size: 18px;
+    width: 170px;
+    outline:none;
+    border: none;
+    height: 36px;
+    margin: 8px;
+    background-color:rgb(52,44,36);
+    color:wheat;
+}
+
+/* hide date icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  
+.icons{
+    border:2px solid orange;
+    margin-right: 30px;
+    position: relative;
+}
+.icon{
+    position:absolute;
+    right: 10px;
+    top: 19px;
+    color:wheat;
+    font-size: 18px;
+}
+
+.resPic{
+    width: 100%;
+    height: 250px;
+}
+#btnB{
+    width:410px;
+    height: 40px;
+    background-color: rgb(223,174,103);
+}

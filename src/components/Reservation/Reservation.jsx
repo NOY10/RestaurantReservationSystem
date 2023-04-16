@@ -50,13 +50,13 @@ function Reservation() {
           ))} 
         </Slide>
         <div className="Rbody">
-          <div className="buttonS">
+          {/* <div className="buttonS">
             <button onClick={normal}>Normal</button>
             <button onClick={premium}>Premium</button> 
-          </div>
-          <div className="private">
+          </div> */}
+          {/* <div className="private"> */}
             {clicked=='normal'?<Normal/>:<Premium />}
-          </div>
+          {/* </div> */}
         </div>
     </div>
   )
