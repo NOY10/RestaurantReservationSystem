@@ -2,7 +2,7 @@
 if(isset($_POST["submit"])){  
   
 if(!empty($_POST['email']) && !empty($_POST['pass'])) {  
-    $user=$_POST['user'];
+    // $user=$_POST['user'];
     $email=$_POST['email'];  
     $pass=$_POST['pass'];  
   

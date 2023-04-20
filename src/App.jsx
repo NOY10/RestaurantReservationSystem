@@ -1,5 +1,5 @@
-import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus, ContactUs } from './components/index'
-import { Navigate,Route, Routes, useLocation } from 'react-router-dom';
+import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus,Footer,YMenu,IndianC,ItalianC,JapaneseC } from './components/index'
+import { Navigate,Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -14,9 +14,13 @@ function App() {
           <Route exact path="/Login" element={<Login />}/>
           <Route exact path="/Register" element={<Register />}/>
           <Route exact path="/Aboutus" element={<Aboutus />}/>
-          <Route exact path="/ContactUs" element={<ContactUs />}/>
+          <Route exact path="/YourMenu" element={<YMenu />}/>
+          <Route exact path="/IndianCuisine" element={<IndianC />}/>
+          <Route exact path="/ItalianCuisine" element={<ItalianC />}/>
+          <Route exact path="/JapaneseCuisine" element={<JapaneseC />}/>
           <Route path="*" element={<Navigate to="/Homepage" replace />} />
         </Routes>
+        <Footer/>
     </div>
   )
 }

@@ -2,8 +2,13 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: var(--bg); */
-  font-family: 'Chewy', cursive;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   contain:paint;
+  background: #f0e7db;
+  scroll-behavior: smooth;
+}
+h3{
+  font-family: 'Playfair Display', serif;
 }

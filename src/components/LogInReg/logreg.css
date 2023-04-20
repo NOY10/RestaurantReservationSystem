@@ -19,6 +19,7 @@
     overflow: hidden; 
     /* transform: scale(0); */
     transition: transform .5s ease,height .2s ease; 
+    margin-bottom: 40px;
 }
 .wrapper.active-popup{ 
     transform: scale(1); 
@@ -84,6 +85,7 @@
 }
 .input-box .icon{
     position: absolute;
+    top:0px;
     right: 8px;
     font-size: 1.2em;
     color: #162938;

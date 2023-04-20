@@ -34,18 +34,21 @@ const Navbar = () => {
           </NavLink>
           <span className='focus-broder'></span>
         </div>
-        <div className='anima'>
-          <NavLink to={'/ContactUs'} >
-            Contact Us
-          </NavLink>
-          <span className='focus-broder'></span>
+
+        <div className='register'>
+          <button className='Rbtn'>
+            <NavLink to={'/login'} >
+              Log in
+            </NavLink>
+          </button>
+          <button className='Rbtn'>
+            <NavLink to={'/login'} >
+              Log out
+            </NavLink>
+          </button>
         </div>
-      </div>
-      <div className='register'>
-        <NavLink to={'/logIn'}>
-          Log In
-        </NavLink>
-      </div>
+        
+      </div>  
     </header>
 
   )

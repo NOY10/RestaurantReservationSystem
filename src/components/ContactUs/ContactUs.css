@@ -1,0 +1,119 @@
+.contactUs {
+  height: 100vh;
+  padding: 5rem 0 5rem 0;
+  text-decoration: none;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+  .conInfo{
+    margin-bottom:50px;
+  }
+  .conInfo h1{
+    color: white;
+  }
+  .contactI{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-container {
+    display: flex;
+    padding: 20px;
+    width: 60%;
+    background-color: rgba(245,240,232,0.4);
+    backdrop-filter: blur(6px);
+    border-radius: 40px;
+  }
+
+  .infomation{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .infoAdd p{
+    margin:0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .info{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .infoIcon{
+    margin-right: 50px;
+    background-color: wheat;
+    padding: 20px;
+    border-radius:50%
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+  }
+.anime > .form-input{
+    border: none;
+    font-family: 'Chewy', cursive;
+    outline: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: red;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+:focus{
+    outline: none;
+}
+form > .anime{
+   position: relative;
+   margin: 4px 10px;   
+}
+
+.anime>.form-input ~ .focus-broder{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #c764eb;
+    transition: 0.4s;
+
+}
+
+
+.anime> .form-input:focus ~.focus-broder{
+    width: 100%;
+    transition: 0.4s;
+
+}
+.message_button{
+    display:flex;
+    flex-direction: row;
+}
+
+form > .message_button>.submit-button{
+    font-family: 'Chewy', cursive;
+    color: black;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    background-color:whitesmoke;
+    border: 2px solid purple;
+    margin-left: auto;
+    border-radius: 10px;
+}
+

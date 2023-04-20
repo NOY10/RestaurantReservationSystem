@@ -1,0 +1,31 @@
+.map-area {
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.4rem;
+  }  
+
+  .map-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555;
+    
+  }
+iframe{
+    width: 80%;
+    height: 500px;
+    margin-bottom: 50px;
+    border-radius:30px;
+}
