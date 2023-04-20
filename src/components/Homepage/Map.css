@@ -18,9 +18,9 @@
   .map-container h2 {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 400;
     text-transform: uppercase;
     color: #555;
+    font-family: 'Playfair Display', serif;
     
   }
 iframe{

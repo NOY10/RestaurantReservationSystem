@@ -5,22 +5,22 @@ import { FaCalendarAlt } from 'react-icons/Fa'
 
 
 function normal() {
-    let sum = 0
-    const getAll = () => {
-        for (var i = 0; i < localStorage.length; i++) {
+    // let sum = 0
+    // const getAll = () => {
+    //     for (var i = 0; i < localStorage.length; i++) {
 
-            // set iteration key name
-            var key = localStorage.key(i);
+    //         // set iteration key name
+    //         var key = localStorage.key(i);
           
-            // use key name to retrieve the corresponding value
-            var value = localStorage.getItem(key);
+    //         // use key name to retrieve the corresponding value
+    //         var value = localStorage.getItem(key);
           
-            // console.log the iteration key and value
-            // console.log('Key: ' + key + ', Value: ' + value);  
-            sum=sum+JSON.parse(value)
-          }
-        return sum
-    }  
+    //         // console.log the iteration key and value
+    //         // console.log('Key: ' + key + ', Value: ' + value);  
+    //         sum=sum+JSON.parse(value)
+    //       }
+    //     return sum
+    // }  
   return (
     <div className="normal">
         <div className="left">
@@ -37,7 +37,7 @@ function normal() {
             <form>
                 <div className="Fouter">
                     <div className="inp" id="bod">
-                        <p>Mr.Lobzang Yonten</p>
+                        <p>Mr.Dorji Drukpa</p>
                     </div>
                     <div className="inp">
                         <div className="icons">
@@ -45,7 +45,7 @@ function normal() {
                             <FaCalendarAlt className="icon"/>
                         </div>
                         <div className="icons">
-                            <input className="inputI" type="time" />
+                            <input className="inputI" type="input" placeholder="00:00 AM"/>
                             <BsFillClockFill className="icon"/>
                         </div>
                     </div>
@@ -65,12 +65,12 @@ function normal() {
                         </div> */}
                         
                     </div>
-                    <div className="orderA" >
+                    {/* <div className="orderA" >
                         <p> Total Amount: {getAll()}</p>
                         <a href="./YourMenu">View your orders</a>
-                    </div>  
+                    </div>   */}
                     <div className="inp" >
-                        <button className="btnB">BOOK NOW</button>
+                        <a href="./YourMenu" className="btnB">BOOK NOW</a>
                     </div>
                 </div>
             </form>

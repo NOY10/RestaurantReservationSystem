@@ -10,8 +10,9 @@
   .conInfo{
     margin-bottom:50px;
   }
-  .conInfo h1{
+  .conInfo h2{
     color: white;
+    font-family: 'Playfair Display', serif;
   }
   .contactI{
     display: flex;
@@ -67,7 +68,7 @@
     outline: none;
     border-radius: 10px;
     background-color: whitesmoke;
-    color: red;
+    color: black;
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -88,7 +89,7 @@ form > .anime{
     left: 0;
     width: 0;
     height: 4px;
-    background-color: #c764eb;
+    background-color: #16a083;
     transition: 0.4s;
 
 }
@@ -112,7 +113,7 @@ form > .message_button>.submit-button{
     width: 100%;
     cursor: pointer;
     background-color:whitesmoke;
-    border: 2px solid purple;
+    border: 2px solid #16a083;
     margin-left: auto;
     border-radius: 10px;
 }

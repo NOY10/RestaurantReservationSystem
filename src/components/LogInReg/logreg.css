@@ -66,6 +66,7 @@
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
+    
 }
 .input-box input:focus~label,
 .input-box input:valid~label{
@@ -82,6 +83,7 @@
     color: #162938;
     font-weight: 600;
     padding: 0 35px 0 5px;
+    
 }
 .input-box .icon{
     position: absolute;
@@ -130,4 +132,7 @@
 }
 .login-register p a:hover{
     text-decoration: underline;
+}
+.TBtn{
+    
 }

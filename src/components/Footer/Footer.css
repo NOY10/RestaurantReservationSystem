@@ -17,16 +17,46 @@
     margin:10px;
     cursor: pointer;
 }
-
-.newsL{
-    
-    display: flex;
+.newsD h3{
+    padding: 0;
+    margin: 20px;
 }
+
 .newsD p{
     padding: 0;
-    margin: 0;
+    margin: 5px;
+}
+.newsL{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.newsLI{
+    border:none;
+    outline:none;
+    height: 30px;
+    background: whitesmoke;
+    border-radius:5px;
+    margin-bottom: 5px;
+
+}
+.newsLB{
+    margin-top: -1px;
+    background: #16a083 ;
+    color: white;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
+  
+.newsLB:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
 }
 
+.socialIcon{
+    display: flex;
+}
 /* .footer div{
     text-align: center;
 }

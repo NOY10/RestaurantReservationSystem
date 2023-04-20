@@ -42,7 +42,7 @@ const Navbar = () => {
             </NavLink>
           </button>
           <button className='Rbtn'>
-            <NavLink to={'/login'} >
+            <NavLink to={'/Honepage'} >
               Log out
             </NavLink>
           </button>

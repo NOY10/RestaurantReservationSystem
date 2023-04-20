@@ -11,8 +11,8 @@ function Homepage() {
     <div className="homepage">
       <section className="showcase-area">
         <div className="showcase-container">
-            <h1 className="main-title" id="home"><font color="white">Gawa Restaurant</font></h1>
-            <p><font color="white">Eat Healthy, Live Healthy</font></p>
+            <h1 className="main-title">Gawa Restaurant</h1>
+            <p>Eat Healthy, Live Healthy</p>
         </div>
       </section>
       

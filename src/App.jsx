@@ -1,4 +1,4 @@
-import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus,Footer,YMenu,IndianC,ItalianC,JapaneseC } from './components/index'
+import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus,Footer,YMenu,IndianC,ItalianC,JapaneseC, Admin, Dashboard } from './components/index'
 import { Navigate,Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
           <Route exact path="/IndianCuisine" element={<IndianC />}/>
           <Route exact path="/ItalianCuisine" element={<ItalianC />}/>
           <Route exact path="/JapaneseCuisine" element={<JapaneseC />}/>
+          <Route exact path="/Admin" element={<Admin />}/>
+          <Route exact path="/Dashboard" element={<Dashboard />}/>
           <Route path="*" element={<Navigate to="/Homepage" replace />} />
         </Routes>
         <Footer/>

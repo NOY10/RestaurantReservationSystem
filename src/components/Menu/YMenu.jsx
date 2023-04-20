@@ -66,6 +66,33 @@ function YMenu() {
         <button onClick={() =>remove()} className="YMeB">DELETE</button>
       </div>
 
+      <div className="YourT">
+        <h3>Your Table</h3>
+        <div  className="Tinfo">
+          <div className="TValue">
+            <label>Name:</label>
+            <p>Mr Dorji Drukpa</p>
+          </div>
+          <div className="TValue">
+            <label>Name:</label>
+            <input type="file" className=""/>
+          </div>
+          <div className="TValue">
+            <p>Table No: 1</p>
+          </div>
+          <div className="TValue">
+            <p>Date:21/04/2023</p>
+          </div>
+          <div className="TValue">
+            <p>Time: 7.00 pm</p>
+          </div>
+          <div className="TValue">
+            <button type="button" className="TBtn">Cancel Reservation</button>
+          </div>
+        </div>
+
+      </div>
+
       
     </div>
   )

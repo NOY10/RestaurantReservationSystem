@@ -10,7 +10,7 @@ function Aboutus() {
                 <img src={pic1} alt="food" />
             </div>
             <div className="about-text">
-                <p className="small">About Us</p>
+                <h1 >About Us</h1>
                 <h2>We've been making healthy food for last 9 years</h2>
                 <p>
                     We cordially invite you to relax, take it easy, 

@@ -144,5 +144,41 @@
     color: white;
     width: 70px;
     background-color:#16a083;
+    cursor: pointer;
+}
+.YMeB:hover {
+    background: #117964;
+    transition: background 0.3s ease-in-out;
+  }
+  
+.YourT>h3{
+    margin: 0;
+    padding: 0;
 }
 
+.Tinfo{
+    display: flex;
+    border:1px solid black;
+}
+.TValue{
+    display: flex;
+    align-items: center;
+    margin:5px;
+}
+.TBtn{
+    margin-top: -1px;
+    background: #16a083 ;
+    color: white;
+    width: 100px;
+    height: 55px;
+    cursor: pointer;
+}
+  
+.TBtn:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="file"]{
+    width: 175px;
+}

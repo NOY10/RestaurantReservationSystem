@@ -9,7 +9,7 @@ function ContactUs() {
   return (
     <div className="contactUs">
       <div className="conInfo">
-        <p style={{fontSize:'40px',color:'white'}}>Contact Us</p>
+        <h2 style={{fontSize:'40px',color:'white'}}>Contact Us</h2>
         {/* <p>Helco</p> */}
       </div>
       
@@ -21,7 +21,7 @@ function ContactUs() {
               <div className='infoAdd'>
                 <p>Address</p>
                 <p>
-                  43234 Camp Road,<br/>
+                  43234 Babesa Road,<br/>
                   Thimphu,Bhutan
                 </p>
               </div>
@@ -31,13 +31,14 @@ function ContactUs() {
               <div className='infoAdd'>
                 <p>Phone</p>
                 <p>+197-17679384</p>
+                <p>+197-77083423</p>
               </div>
             </div>
             <div className="infomation">
               <CiMail className='infoIcon'/>
               <div className='infoAdd'>
                 <p>Email</p>
-                <p>LObzangyen@gmail.com</p>
+                <p>gawaRestaurant2021@gmail.com</p>
               </div>
             </div>
           </div>

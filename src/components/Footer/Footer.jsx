@@ -15,11 +15,11 @@ function Footer() {
         <div class="Ficons">
             <p>Follow Us</p>
             <div className='socialIcon'>
-                <BsFacebook className='SIcon'/>
-                <BsInstagram className='SIcon'/>
-                <FaTwitter className='SIcon'/>
-                <ImWhatsapp className='SIcon'/>
-                <RxLinkedinLogo className='SIcon'/>
+                <a href='https://www.facebook.com/' target='__blank'><BsFacebook className='SIcon' /></a>
+                <a href='https://www.instagram.com/' target='__blank'><BsInstagram className='SIcon' /></a>
+                <a href='https://twitter.com/?lang=en' target='__blank'><FaTwitter className='SIcon' /></a>
+                <a href='https://www.whatsapp.com/' target='__blank'><ImWhatsapp className='SIcon' /></a>
+                <a href='https://www.linkedin.com/' target='__blank'><RxLinkedinLogo className='SIcon' /></a>
             </div>
         </div>
 
@@ -29,8 +29,8 @@ function Footer() {
                 <p>Receive the Latest News and Exclusive Offers </p>
             </div>
             <div class="newsL">
-                <button className='btn'>Text</button>
-                <button className='btn'>Email</button>
+                <input type="text" className='newsLI' placeholder="Email"/>
+                <button className='newsLB'>Subscribe</button>
             </div>
         </div>
     </div>

@@ -22,5 +22,10 @@
     justify-content: center;
     height: 100%;
     font-size: 1.4rem;
+    margin-right: 800px;
 }  
-
+.showcase-container{
+  color: black;
+  font-weight: bolder;
+  font-family: 'Playfair Display', serif;
+}
