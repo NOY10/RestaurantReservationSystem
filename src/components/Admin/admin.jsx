@@ -33,10 +33,6 @@ function admin() {
                     <input type="password" id='password' required/>
                     <label for="">Password</label>
                 </div>
-                <div className="remember-forgot">
-                    <label for=""><input type="checkbox"/>Remember me</label>
-                    <a href="#">Forgot Password?</a>
-                </div>
                 <button className="btn" onClick={() => auth()}>Login</button>
             </form>
         </div>

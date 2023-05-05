@@ -159,6 +159,8 @@
 .Tinfo{
     display: flex;
     border:1px solid black;
+    flex-direction: column;
+    width: 500px;
 }
 .TValue{
     display: flex;

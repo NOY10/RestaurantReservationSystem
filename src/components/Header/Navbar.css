@@ -13,18 +13,18 @@ header{
     width: 100%;
     height: 90px;
 }
+  
 .logo{
     width: 70px;
-    padding-left: 20px;;
+    padding-left: 20px;
     cursor: pointer;
 }
-.headerRight{
+.navMenu{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 40px;
+    margin-right: 10px;
 }
-a{
+.navMenu a{
     cursor: pointer;
     color: white;
     display: flex;
@@ -35,7 +35,7 @@ a{
     text-transform: uppercase;
 }
 
-.headerRight > .anima{
+.navMenu > .anima{
     position: relative;
     margin: 20px;  
 }
@@ -57,7 +57,7 @@ a{
      width: 100%;
      transition: 0.4s;
  }
-.active{
+ .navMenu .active{
     text-decoration: 3px underline #117964 ;
 }
 .register{
@@ -87,3 +87,59 @@ a{
     transition: background 0.3s ease-in-out;
     cursor: pointer;
   }
+  .menu_icon{
+    display: none;
+    color: #fff;
+  }
+  
+
+  @media screen and (max-width: 1120px) {
+    .navMenu {
+      flex-direction: column;
+      position: absolute;
+      background-color:black;
+      padding: 10px 15px;
+      right: 10px;
+      top:91px;
+      transition: all 0.5s ease-in-out;
+    }
+    .navMenu > .anima{
+        position: relative;
+        margin: 10px;  
+    }
+    .register{
+        flex-direction: column;
+    }
+
+    .navMenu a{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      margin: -10 0px;
+    }
+
+    .Rbtn{
+        color: red;
+    }
+    .menu_icon{
+      display: block;
+      transform: translate(-50%, 10%);
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--text-primary);
+      transition: all 0.2s ease-in-out;
+    }
+    .navMenu.close {
+      right: -100%;
+      transition: all 0.5s ease-in-out;
+      text-align: center;
+    }
+  }
+
+/* .icon {
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--anime);
+} */
+

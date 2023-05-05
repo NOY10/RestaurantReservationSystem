@@ -2,7 +2,6 @@ import {useState} from 'react';
 import './Reservation.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import Premium from './premium';
 import Normal from './normal';
 
 
@@ -12,7 +11,7 @@ function Reservation() {
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '700px'
+  height: '600px'
   }
   const slideImages = [
     {
@@ -36,16 +35,7 @@ function Reservation() {
     arrows: false,
     // infinite: false,
   };
-
-  const [clicked,setClicked] = useState('normal');
-  const premium= () =>{
-    setClicked('premium')
-  }
-  const normal= () =>{
-    setClicked('normal')
-  }
- 
-  return (
+   return (
     <div className="reservation">
         <Slide {...properties}>
          {slideImages.map((slideImage, index)=> (
@@ -55,14 +45,8 @@ function Reservation() {
             </div>
           ))} 
         </Slide>
-        <div className="Rbody">
-          {/* <div className="buttonS">
-            <button onClick={normal}>Normal</button>
-            <button onClick={premium}>Premium</button> 
-          </div> */}
-          {/* <div className="private"> */}
-            {clicked=='normal'?<Normal/>:<Premium />}
-          {/* </div> */}
+        <div className="Rbody">      
+            <Normal/>
         </div>
     </div>
   )

@@ -64,7 +64,7 @@ function YMenu() {
           onChange={(e) => setInputData1(e.target.value)}
         />
         <button onClick={() =>remove()} className="YMeB">DELETE</button>
-      </div>
+      </div><br/>
 
       <div className="YourT">
         <h3>Your Table</h3>
@@ -74,7 +74,7 @@ function YMenu() {
             <p>Mr Dorji Drukpa</p>
           </div>
           <div className="TValue">
-            <label>Name:</label>
+            <label>Attach Your Payment Screenshot:</label>
             <input type="file" className=""/>
           </div>
           <div className="TValue">

@@ -8,20 +8,10 @@
     align-items: center;
     justify-content: center;
 }
-.private{
-    height: 400px;
-    /* border: 3px solid red; */
-    margin: 7px;
-    width: 100%;
-}
-
-.buttonS{
-    margin-top: 7px;
-}
-
 button{
     padding: 7px;
     margin: 4px;
     border-radius: 7px;
     border:none;
 }
+

@@ -42,11 +42,11 @@
     margin: 8px;
     display: flex;
 }
-#bod{
+.bod{
     border:2px solid orange;
-    width: 410px
+    width: 410px;
 }
-#bod > p{
+.bod > p{
     margin-left: 7px;
 }
 
@@ -106,7 +106,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .tableC{
     display: flex;
+    flex-wrap: wrap;
 }
+.tableC > p{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.linkT > a{
+    margin-left: 60px;
+    color: wheat;
+}
+
 
 select{
     font-size: 18px;
@@ -121,7 +131,6 @@ select{
     border:2px solid orange;
 }
 
-
 .inp > a{
     color: wheat;
     display: flex;
@@ -133,4 +142,47 @@ select{
     font-size: 20px;
     font-weight: bolder;
     border-radius: 20px;
+}
+.tit > .medP{
+    line-height: 30px;
+    font-size: 2rem;
+    margin-bottom: 7px;
+}
+
+
+@media screen and (max-width: 1120px) {
+    .normal{
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .left > .tit{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 944px) {
+    .left > .tit{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .Fouter .inp{
+        flex-direction: column;
+    }
+
+    .icons{
+        margin-bottom:7px;
+        width: 100%;
+    }
+    .bod{
+        width: 100%;
+        
+    }
+    .inp .btnB{
+        width: 91%;
+    }
 }

@@ -1,0 +1,50 @@
+.Tables4{
+    position: relative;
+}
+.tab4{
+    width: 220px;
+    height: 130px;
+    background-color: rgba(255, 132, 0, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.chair1,.chair2,.chair3,.chair4{
+    background-color: rgb(41, 162, 4);
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+}
+.Tables4 .chair1{
+    position:absolute;
+    left: 25px;
+    top: -20px;
+}
+.Tables4 .chair2{
+    position:absolute;
+    left: 25px;
+    top: 100px;
+}
+.Tables4 .chair3{
+    position:absolute;
+    left: 140px;
+    top: 100px;
+}
+.Tables4 .chair4{
+    position:absolute;
+    left: 140px;
+    top: -20px;
+}
+.Tno{
+    font-size: 25px;
+    margin: 4px;
+    text-align: right;
+}
+
+.chair1.booked,.chair2.booked,.chair3.booked,.chair4.booked{
+    background-color: red;
+}

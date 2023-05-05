@@ -1,4 +1,5 @@
-import { Navbar, Reservation,Homepage, Menu, Login, Register, Aboutus,Footer,YMenu,IndianC,ItalianC,JapaneseC, Admin, Dashboard } from './components/index'
+import { Navbar, Reservation,Homepage, Menu, Login, Register, 
+  Aboutus,Footer,YMenu,IndianC,ItalianC,JapaneseC, Admin, Dashboard} from './components/index'
 import { Navigate,Route, Routes } from 'react-router-dom';
 
 function App() {
