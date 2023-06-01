@@ -3,6 +3,7 @@ import pic5 from '../img/jap.jpg';
 import pic6 from '../img/ITL.jpg';
 import pic7 from '../img/IND.jpg';
 import './SpecialC.css'
+import { NavLink } from 'react-router-dom';
 
 function SpecialC() {
   return (
@@ -14,7 +15,9 @@ function SpecialC() {
               <img src={pic5} alt="error" />
               <div className="img-content">
                 <h3>JAPANESE</h3>
-                <a href="./JapaneseCuisine" className="btn" target="blank">Go to Menu</a>
+                <NavLink to={'/JapaneseCuisine'} className="btn">
+                  Go to Menu
+                </NavLink>
               </div>
             </div>
           </div>
@@ -23,7 +26,9 @@ function SpecialC() {
               <img src={pic6} alt="error" />
               <div className="img-content">
                 <h3>ITALIAN</h3>
-                <a href="./ItalianCuisine" className="btn" target="blank">Go to Menu</a>
+                <NavLink to={'/ItalianCuisine'} className="btn">
+                  Go to Menu
+                </NavLink>
               </div>
             </div>
           </div>
@@ -32,7 +37,9 @@ function SpecialC() {
               <img src={pic7} alt="error" />
               <div className="img-content">
                 <h3>INDIAN</h3>
-                <a href="./IndianCuisine" className="btn" target="blank">Go to Menu</a>
+                <NavLink to={'/IndianCuisine'} className="btn">
+                  Go to Menu
+                </NavLink>
               </div>
             </div>
           </div>

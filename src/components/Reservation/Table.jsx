@@ -1,68 +1,40 @@
 import {useState,useEffect} from 'react'
-import Tables2 from "./Tables/Tables2"
 import Tables4 from "./Tables/Tables4"
-import './Table.css'
+import './Table.css';
+import {db} from '../../config/firebase'
+import { collection, onSnapshot  } from 'firebase/firestore';
+import img from './taA.png'
+
 function Table() {
-  const [clicked,setClicked] = useState(false);
-  function click() {
-    setClicked(!clicked)
-  }
+  const [booking,setBooking] = useState([]);
 
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, "booking"), (snapshot) => {
+      try {
+        const bookingData = snapshot.docs.map((doc) => doc.data());
+        setBooking(bookingData);
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  
+    return () => {
+      // Unsubscribe from the real-time updates when the component unmounts or the dependency array changes
+      unsubscribe();
+    };
+  }, []);
+  
   return (
-    <div className="table">
-      <div className="t2">
-        <div className="room2">
-          <Tables4 tableno="01" book="1"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="02" book="1"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="03"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="04"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="05"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="06"/>
-        </div>
-
-        <div className="room2">
-          <Tables2 tableno="07"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="08"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="09"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="10"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="11"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="12"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="13"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="14"/>
-        </div>
-        <div className="room2">
-          <Tables2 tableno="15"/>
-        </div>
-        <div className="room2">
-          <Tables4 tableno="16"/>
-        </div>
-
+    <section className="table">
+      <img className="imgRoom" src={img}/>
+      <div className="tabCha">
+        {booking?.map((tableno)=>(
+          <div className="room2">
+            <Tables4 key={tableno.TableNo} tableno={tableno.TableNo} name={tableno.name}/>
+          </div>
+          ))}
       </div>
-    </div>
+    </section>
   )
 }
 

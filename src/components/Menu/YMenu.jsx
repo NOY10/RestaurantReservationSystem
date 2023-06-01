@@ -1,99 +1,96 @@
 import './Menu.css';
 import {useState, useEffect} from 'react'
+import YourTable from './YourTable';
+import {db} from '../../config/firebase'
+import { collection, doc, getDocs, onSnapshot, setDoc  } from 'firebase/firestore';
+import { selectUser } from '../../features/userSlice';
+import { useSelector} from 'react-redux';
+import Yourorder from './Yourorder';
 
 function YMenu() {
+  const [booking,setBooking] = useState([]);
+  const [order,setOrder] = useState([]);
+  const user = useSelector(selectUser);
   
-  const [inputData1, setInputData1] = useState('');
-  const [clicked,setClicked] = useState(false);
+  //For booking
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection(db, "booking"), (snapshot) => {
+      try {
+        const bookingData = snapshot.docs.map((doc) => doc.data());
+        setBooking(bookingData);
+      } catch (error) {
+        console.error(error);
+      }
+    });
+    return () => {
+      // Unsubscribe from the real-time updates when the component unmounts or the dependency array changes
+      unsubscribe();
+    };
+  }, []);
+  // For order
+  useEffect(() => {
+    const unsubscribe = onSnapshot(collection( doc(db, 'order', user.email), 'orders'), (snapshot) => {
+      try {
+        const orderData = snapshot.docs.map((doc) => doc.data());
+        setOrder(orderData);
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  
+    return () => {
+      // Unsubscribe from the real-time updates when the component unmounts or the dependency array changes
+      unsubscribe();
+    };
+  }, []);
 
-    let  sum = 0;
-    const getAll = () => {
-      let orders = []
-        for (var i = 0; i < localStorage.length; i++) {
-
-            // set iteration key name
-            var key = localStorage.key(i);
-          
-            // use key name to retrieve the corresponding value
-            var value = localStorage.getItem(key);
-          
-            // console.log the iteration key and value
-            // console.log('Key: ' + key + ', Value: ' + value); 
-            sum = sum + JSON.parse(value);
-            if(JSON.parse(value)!=0){
-              orders.push([key, JSON.parse(value)]) 
-            }
-            
-        
-          }
-        return orders
-    }
-    const remove = () => {
-      setClicked(!clicked)
-    }
-
-    useEffect(() => {
-      localStorage.removeItem(inputData1);
-   }, [clicked]);
-
-   const items = getAll(); // assume items is an array of objects
-
-    const listItems = items.map((item) =>
-    <div className="YMe">
-      <p>{item[0]}</p>
-      <p>{item[1]}</p>
-    </div>
-      
-    ); 
+  let sum=0;
+  order?.map((order) =>(
+    sum=sum+order.tolPrice
+  ))
   return (
     <div className="YMenu">
-      <div className="YMe">
-        <p>Your Order</p>
-        <p>Amount</p>
+      <div className="ptM">
+        <p className='pt1'>Your order</p>
+        <p className='pt2'>No of <br/>order</p>
+        <p className='pt3'>Price</p>
+        <p className='pt4'>Total</p>
+        <p className="pt5">Delete</p>
       </div>
-      {listItems}
+      {
+        order?.map((order) =>(
+          <>
+            <Yourorder 
+              key={order.dishName}
+              name={order.dishName}
+              NoofOr={order.tolPrice/order.Dprice}
+              price={order.Dprice}
+              tolprice={order.tolPrice}
+            />
+          </>
+        ))
+      }
       <div className="YMe">
-        <p>Total Amount</p>
-        <p>{sum}</p>
+        <p className='p1'>Total Amount:</p>
+        <p className='p2'>{sum}</p>
       </div>
-      <div className="YMe">
-        <input 
-          type='text' 
-          className="YMeI"
-          value={inputData1}
-          onChange={(e) => setInputData1(e.target.value)}
-        />
-        <button onClick={() =>remove()} className="YMeB">DELETE</button>
-      </div><br/>
-
-      <div className="YourT">
-        <h3>Your Table</h3>
-        <div  className="Tinfo">
-          <div className="TValue">
-            <label>Name:</label>
-            <p>Mr Dorji Drukpa</p>
-          </div>
-          <div className="TValue">
-            <label>Attach Your Payment Screenshot:</label>
-            <input type="file" className=""/>
-          </div>
-          <div className="TValue">
-            <p>Table No: 1</p>
-          </div>
-          <div className="TValue">
-            <p>Date:21/04/2023</p>
-          </div>
-          <div className="TValue">
-            <p>Time: 7.00 pm</p>
-          </div>
-          <div className="TValue">
-            <button type="button" className="TBtn">Cancel Reservation</button>
-          </div>
-        </div>
-
-      </div>
-
-      
+      {booking?.map((tableno)=>( //{name,TableNo,Date,Time}
+        <>
+          {
+            tableno.name==user.displayName?
+            <div className="room2">
+              <YourTable 
+              key={tableno.TableNo} 
+              name={tableno.name} 
+              tableno={tableno.TableNo}
+              date={tableno.date}
+              time={tableno.time}
+            />
+            </div>
+              : ""
+          }
+        </>
+      ))}
     </div>
   )
 }

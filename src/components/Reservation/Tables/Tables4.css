@@ -1,12 +1,12 @@
 .Tables4{
-    position: relative;
+   position: relative;
 }
 .tab4{
-    width: 220px;
-    height: 130px;
+    width: 130px;
+    height: 95px;
     background-color: rgba(255, 132, 0, 0.4);
     backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 7px;
     position: relative;
     z-index: 99;
 
@@ -15,29 +15,29 @@
 .chair1,.chair2,.chair3,.chair4{
     background-color: rgb(41, 162, 4);
     border-radius: 40px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     opacity: 0.7;
 }
 .Tables4 .chair1{
     position:absolute;
-    left: 25px;
-    top: -20px;
+    left: 12px;
+    top: -17px;
 }
 .Tables4 .chair2{
     position:absolute;
-    left: 25px;
-    top: 100px;
+    left: 12px;
+    top: 80px;
 }
 .Tables4 .chair3{
     position:absolute;
-    left: 140px;
-    top: 100px;
+    left: 82px;
+    top: 80px;
 }
 .Tables4 .chair4{
     position:absolute;
-    left: 140px;
-    top: -20px;
+    left: 82px;
+    top: -17px;
 }
 .Tno{
     font-size: 25px;
@@ -47,4 +47,128 @@
 
 .chair1.booked,.chair2.booked,.chair3.booked,.chair4.booked{
     background-color: red;
+}
+@media screen and (max-width: 830px) {
+    .tab4{
+        width: 120px;
+        height: 90px;
+    }
+    .chair1,.chair2,.chair3,.chair4{
+        width: 35px;
+        height: 35px;
+        opacity: 0.7;
+    }
+    .Tables4 .chair1{
+        position:absolute;
+        left: 11px;
+        top: -17px;
+    }
+    .Tables4 .chair2{
+        position:absolute;
+        left: 11px;
+        top: 80px;
+    }
+    .Tables4 .chair3{
+        position:absolute;
+        left: 82px;
+        top: 80px;
+    }
+    .Tables4 .chair4{
+        position:absolute;
+        left: 82px;
+        top: -17px;
+    }
+}
+@media screen and (max-width: 545px) {
+    .tab4{
+        width: 115px;
+        height: 80px;
+    }
+    .chair1,.chair2,.chair3,.chair4{
+        width: 35px;
+        height: 35px;
+        opacity: 0.7;
+    }
+    .Tables4 .chair1{
+        position:absolute;
+        left: 7px;
+        top: -11px;
+    }
+    .Tables4 .chair2{
+        position:absolute;
+        left: 7px;
+        top: 60px;
+    }
+    .Tables4 .chair3{
+        position:absolute;
+        left: 70px;
+        top: 60px;
+    }
+    .Tables4 .chair4{
+        position:absolute;
+        left: 70px;
+        top: -11px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .tab4{
+        width: 80px;
+        height: 50px;
+    }
+    .chair1,.chair2,.chair3,.chair4{
+        width: 25px;
+        height: 25px;
+        opacity: 0.7;
+    }
+    .Tables4 .chair1{
+        position:absolute;
+        left: 8px;
+        top: -13px;
+    }
+    .Tables4 .chair2{
+        position:absolute;
+        left: 8px;
+        top: 35px;
+    }
+    .Tables4 .chair3{
+        position:absolute;
+        left: 50px;
+        top: 35px;
+    }
+    .Tables4 .chair4{
+        position:absolute;
+        left: 50px;
+        top: -13px;
+    }
+}
+@media screen and (max-width: 365px) {
+    .tab4{
+        width: 70px;
+        height: 50px;
+    }
+    .chair1,.chair2,.chair3,.chair4{
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+    }
+    .Tables4 .chair1{
+        position:absolute;
+        left: 7px;
+        top: -11px;
+    }
+    .Tables4 .chair2{
+        position:absolute;
+        left: 7px;
+        top: 37px;
+    }
+    .Tables4 .chair3{
+        position:absolute;
+        left: 40px;
+        top: 37px;
+    }
+    .Tables4 .chair4{
+        position:absolute;
+        left: 40px;
+        top: -11px;
+    }
 }

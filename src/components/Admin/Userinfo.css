@@ -1,0 +1,81 @@
+.userinfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.UMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid black;
+    width: 500px;
+    margin: 6px;
+}
+
+.UMe > .Up1{
+    color: black;
+    display: block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+.UMe > .Up2,.Up3,.Up4{
+    color: black;
+    display: block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+.UserMeB{
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+}
+.UptM {
+    display: flex;
+    position: absolute;
+    
+}
+.UptM .Upt1{
+    position: relative;    
+    left: -70px;
+    bottom: 50px;
+}
+.UptM .Upt2{
+    position: relative;    
+    left: -15px;
+    bottom: 50px;
+}
+.UptM .Upt3{
+    position: relative;    
+    left: 15px;
+    bottom: 50px;
+}
+.UptM .Upt4{
+    position: relative;    
+    left: 60px;
+    bottom: 50px;
+}
+
+.ordBut {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border-radius:10px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  .ordBut:hover {
+    color: white;
+    background-color:  #117964;
+  }

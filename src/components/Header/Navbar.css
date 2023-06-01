@@ -61,13 +61,29 @@ header{
     text-decoration: 3px underline #117964 ;
 }
 .register{
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.registerA{
+  position:relative;
+  background-color: #85b8ae;
+  border-radius: 7px;
+  left:50px;
+  top: 70px;
+}
+.register.close {
+  right: -100%;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
 }
 
 .register a{
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
 }
+
  .Rbtn{
     width: 120px;
     height: 35px;
@@ -92,6 +108,43 @@ header{
     color: #fff;
   }
   
+  .headerRight{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .Profile{
+    display: flex;
+    align-items: center;
+  }
+
+  .profilebox .profileName{
+    margin-right: 9px;
+    font-weight: 900;
+    color: white;
+  }
+  .profilebox .greeting{
+    font-size: 15px;
+    color: white;
+  }
+
+  .Profile .profilePic{
+    width:40px;
+    height:40px;
+    border-radius: 99px;
+    background-color: #D47500;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 3px;
+  }
+
+  .profilePic .PFName{
+    color: white;
+    font-size:25px;
+    margin-left: 13px;
+  }
+  
 
   @media screen and (max-width: 1120px) {
     .navMenu {
@@ -107,10 +160,6 @@ header{
         position: relative;
         margin: 10px;  
     }
-    .register{
-        flex-direction: column;
-    }
-
     .navMenu a{
       width: 100%;
       text-align: center;
@@ -134,12 +183,12 @@ header{
       transition: all 0.5s ease-in-out;
       text-align: center;
     }
+    .headerRight{
+      margin-left: auto;
+    }
+    .headerLeft .logo{
+      margin-left:-30px;
+    }
   }
 
-/* .icon {
-  color: black;
-  padding: 10px;
-  border-radius: 6px;
-  background-color: var(--anime);
-} */
 

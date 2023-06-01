@@ -41,6 +41,27 @@
 .inp{
     margin: 8px;
     display: flex;
+
+}
+.intBtn{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+}
+.intBtn > .intB{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 40px;
+    background-color: rgb(223,174,103);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
 .bod{
     border:2px solid orange;
@@ -61,22 +82,49 @@
     color:wheat;
 }
 
+input[type="file"] {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+
+.updiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.upload{
+    font-size:30px;
+}
 /* hide date icon */
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: transparent;
     background: none;
     z-index: 1;
+    cursor: pointer;
   }
   input[type="time"]::-webkit-calendar-picker-indicator {
     color: transparent;
     background: none;
     z-index: 1;
+    cursor: pointer;
   }
   
 .icons{
     border:2px solid orange;
     margin-right: 30px;
     position: relative;
+}
+.TABNO{
+    border:2px solid orange;
+    width: 187px;
+}
+.TABNO2{
+    border:2px solid orange;
+    width: 187px;
+    margin-left: 30px;
+    cursor: pointer;
 }
 .icon{
     position:absolute;
@@ -104,14 +152,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: underline;
 }
 
-.tableC{
-    display: flex;
-    flex-wrap: wrap;
-}
-.tableC > p{
-    margin-left: 10px;
-    font-size: 1.2rem;
-}
 .linkT > a{
     margin-left: 60px;
     color: wheat;
@@ -131,18 +171,6 @@ select{
     border:2px solid orange;
 }
 
-.inp > a{
-    color: wheat;
-    display: flex;
-    justify-content: center;
-    width:410px;
-    height: 40px;
-    background-color: rgb(223,174,103);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    border-radius: 20px;
-}
 .tit > .medP{
     line-height: 30px;
     font-size: 2rem;
@@ -163,10 +191,16 @@ select{
     .left > .tit{
         height: 300px;
     }
+    .resPic{
+        display:none;
+    }
 }
 @media screen and (max-width: 944px) {
     .left > .tit{
         height: 300px;
+    }
+    .resPic{
+        display:none;
     }
 }
 @media screen and (max-width: 440px) {
@@ -174,7 +208,7 @@ select{
         flex-direction: column;
     }
 
-    .icons{
+    .icons,.TABNO{
         margin-bottom:7px;
         width: 100%;
     }
@@ -184,5 +218,12 @@ select{
     }
     .inp .btnB{
         width: 91%;
+    }
+    .TABNO2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .resPic{
+        display:none;
     }
 }

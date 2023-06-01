@@ -112,25 +112,67 @@
 
 .YMenu {
     margin-top: 50px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 60vh;
 }
 
 .YMe{
-
     display: flex;
     align-items: center;
     justify-content: center;
     border:1px solid black;
-    width: 500px;
+    width: 360px;
+    margin: 6px;
+    border-radius: 5px;
 }
 
-.YMe p{
+.YMe > .p1{
     color: black;
-    margin: 10px;
+    display: block;
+    width: 149px;
+    text-align: left;
+    margin-left: 7px;
+    font-size: 14px;
+}
+.YMe > .p2,.p3,.p4{
+    color: black;
+    display: block;
+    width: 34px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.ptM {
+    display: flex;
+    align-items: center;
     
+}
+.ptM p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.ptM .pt1{
+    position: relative;    
+    left: -60px;
+}
+.ptM .pt2{
+    position: relative;    
+    left: 15px;
+}
+.ptM .pt3{
+    position: relative;    
+    left: 22px;
+}
+.ptM .pt4{
+    position: relative;    
+    left: 30px;
+}
+.ptM .pt5{
+    position: relative;    
+    left: 50px;
 }
 .YMeI{
     height: 20px;
@@ -140,44 +182,67 @@
     background-color:white;
     margin-right: 10px;
 }
-.YMeB{
-    color: white;
-    width: 70px;
-    background-color:#16a083;
+.YMeB {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    border-radius:10px;
+    transition: 0.3s ease;
+    background-color: rgb(215, 164, 164);
     cursor: pointer;
-}
-.YMeB:hover {
-    background: #117964;
-    transition: background 0.3s ease-in-out;
   }
+  .YMeB:hover {
+    color: white;
+    background: rgb(224, 56, 56);
+  }
+
   
 .YourT>h3{
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
 }
 
 .Tinfo{
     display: flex;
-    border:1px solid black;
     flex-direction: column;
-    width: 500px;
+    width: 360px;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    border-radius: 9px;
+    border: 1px solid black;
+    background: rgba(138, 141, 153, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(126, 123, 169, 0.5);
 }
 .TValue{
     display: flex;
+    margin-left:10px;
     align-items: center;
-    margin:5px;
 }
+/* .TValue label{
+    margin:7px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+} */
+
 .TBtn{
-    margin-top: -1px;
-    background: #16a083 ;
-    color: white;
-    width: 100px;
+    color: black;
+    width: 335px;
     height: 55px;
     cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(215, 164, 164);
 }
   
 .TBtn:hover {
-  background: #117964;
+  background: rgb(224, 56, 56);
+  color: white;
   transition: background 0.3s ease-in-out;
 }
 

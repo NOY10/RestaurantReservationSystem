@@ -1,3 +1,8 @@
+.Dash{
+  min-height:70vh;
+  display: flex;
+  flex-direction: column;
+}
 .tableD {
     margin: 20px auto;
     width: 90%;
@@ -9,23 +14,24 @@
   }
   .tableD th {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     color: #FDC830;
     line-height: 26px;
-    padding: 18px 30px;
+    padding: 18px 80px;
   }
   .tableD thead tr {
     background: #12192c;
-    
   }
   .tableD td {
-    padding: 30px 10px;
+    padding: 10px 10px;
     font-weight: 300;
-    font-size: 16px;
-    color: black-2;
+    font-size: 13px;
+    color: black;
     line-height: 26px;
     text-transform: uppercase;
-    color:#000000
+    display: inline-block;
+    width: 200px;
+    text-align: center;
   }
   .tableD tbody tr:nth-child(odd) {
     background: rgba(185, 188, 192, 0.5);
@@ -44,12 +50,13 @@
     font-size: 15px;
     line-height: 25px;
     text-transform: uppercase;
-    width: 170px;
+    width: 100px;
     text-align: center;
     padding: 10px;
     border-radius:10px;
     transition: 0.3s ease;
     text-decoration: none;
+    cursor: pointer;
   }
   .btnD:hover {
     color: white;
@@ -96,4 +103,28 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin: 10px;
     }
-  
+
+.Mbtn{
+  margin-top:80px;
+  margin-left: 10px;
+}
+.Mbtn a{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  border-radius:10px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid black;
+  color: black;
+}
+.Mbtn a:hover{
+  color: white;
+  background-color: #54a961;
+}
